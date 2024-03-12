@@ -20,7 +20,13 @@
     <h2 class="text-center">About Jovian</h2>
       <p class="lead">Bacon ipsum dolor amet shoulder beef ribs doner, ham hock ball tip kevin leberkas fatback frankfurter alcatra brisket flank pork belly. Short loin ribeye tail, buffalo chislic beef cupim turducken pig ball tip. Landjaeger boudin meatloaf ground round alcatra, turducken tri-tip ham tongue strip steak chicken picanha frankfurter sausage. Turkey cow hamburger cupim. Cow ham chuck beef. Spare ribs tongue bresaola, shankle sirloin sausage turkey flank tri-tip brisket doner. Chuck short loin ribeye chislic, chicken cow frankfurter bresaola beef ribs jerky shoulder capicola turducken biltong.</p>
     <h2 class="text-center">Open Positions</h2>
-      <p>TODO- show the jobs here</p>
+        <div>
+        {% for job in jobs %}
+        {% include 'jobitem.html' %}
+        {% endfor %}
+        </div>
+
+  
       <div class="text-center">
       <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2024,Suryah</p>
